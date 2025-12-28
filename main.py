@@ -33,7 +33,7 @@ index = pc.Index(PINECONE_INDEX_NAME)
 RAG_STATS = {
     "chunk_size": 1024,
     "overlap_ratio": 0.2,
-    "top_k": 5
+    "top_k": 8
 }
 
 
@@ -139,4 +139,5 @@ def stats():
 if __name__ == '__main__':
     # Uncomment the next line ONLY for the first run to upload data:
     # upload_data_to_pinecone("ted_talks_en.csv")
+
     app.run(port=5000,debug=True)
