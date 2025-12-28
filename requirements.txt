@@ -1,0 +1,5 @@
+flask
+pandas
+openai
+pinecone
+python-dotenv
