@@ -135,9 +135,13 @@ def ask():
 def stats():
     return jsonify(RAG_STATS)
 
-
+@app.route('/')
+def home():
+    return "TED Talk RAG Assistant API is live! Use /api/stats or /api/ask."
+    
 if __name__ == '__main__':
     # Uncomment the next line ONLY for the first run to upload data:
     # upload_data_to_pinecone("ted_talks_en.csv")
 
     app.run(port=5000,debug=True)
+
