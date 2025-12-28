@@ -83,6 +83,7 @@ def upload_data_to_pinecone(csv_path):
     print("Upload complete!")
 
 
+@app.route('/api/prompt', methods=['POST'])
 @app.route('/api/ask', methods=['POST'])
 def ask():
     data = request.json
@@ -144,4 +145,5 @@ if __name__ == '__main__':
     # upload_data_to_pinecone("ted_talks_en.csv")
 
     app.run(port=5000,debug=True)
+
 
