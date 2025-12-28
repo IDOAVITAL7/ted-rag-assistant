@@ -1,0 +1,5 @@
+flask
+pandas
+openai
+pinecone-client
+python-dotenv
