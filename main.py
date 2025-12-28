@@ -32,8 +32,8 @@ index = pc.Index(PINECONE_INDEX_NAME)
 
 RAG_STATS = {
     "chunk_size": 1024,
-    "overlap_ratio": 0.2,
-    "top_k": 8
+    "overlap_ratio": 0.3,
+    "top_k": 10
 }
 
 
@@ -145,5 +145,6 @@ if __name__ == '__main__':
     # upload_data_to_pinecone("ted_talks_en.csv")
 
     app.run(port=5000,debug=True)
+
 
 
